@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件传输网站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        #file-upload-form, #file-list {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #5b5b5b;
+        }
+        button {
+            background-color: #22a6b3;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0984a3;
+        }
+        #file-input {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="file-upload-form">
+    <h2>上传文件</h2>
+    <input type="file" id="file-input" multiple>
+    <button onclick="uploadFiles()">上传</button>
+</div>
+
+<div id="file-list">
+    <h2>文件列表</h2>
+    <ul id="files"></ul>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
