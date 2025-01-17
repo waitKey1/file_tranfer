@@ -57,4 +57,4 @@ async def download_file(filename: str):
     raise HTTPException(status_code=404, detail=f"文件 {filename} 未找到")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=10001)

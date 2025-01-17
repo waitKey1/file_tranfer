@@ -1,5 +1,5 @@
 // 假设后端API的URL是以下地址
-const API_URL = 'http://localhost:8000';
+const API_URL = 'http://sztuwork.sligenai.cn/funiapi';
 
 // 加载文件列表
 function loadFileList() {
